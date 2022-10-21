@@ -1,0 +1,15 @@
+.wrapper{
+    width: auto;
+    margin: auto;
+    background-color: lightskyblue;
+    height: auto;
+    min-height: 500px;
+}
+
+.content{
+    width: auto;
+    margin: auto;
+    background-color: gray;
+    height: auto;
+    min-height: 500px;
+}

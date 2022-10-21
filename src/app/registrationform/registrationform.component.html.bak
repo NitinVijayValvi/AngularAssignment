@@ -1,0 +1,68 @@
+<h1>Registration Form</h1>
+
+<!-- <form (ngSubmit)="submitCall()">
+    FirstName : <input type="text" [(ngModel)]="registrationForm.firstname" name ="firstname"><br>
+    LastName  : <input type="text" [(ngModel)]="registrationForm.lastname" name ="lastname"><br>
+    Email  : <input type="text" [(ngModel)]="registrationForm.email" name="email"><br>
+    Password  : <input type="text" [(ngModel)]="registrationForm.password" name="password"><br>
+    Gender  : <input type="text" [(ngModel)]="registrationForm.lastname" name="gender"><br>
+    City  : <input type="text" [(ngModel)]="registrationForm.lastname" name="city"><br>
+    Phone No  : <input type="text" [(ngModel)]="registrationForm.lastname" name="phoneno"><br>
+    <input type="submit" value="Submit">
+
+</form> -->
+
+<!-- <div class="form-group" >
+    First Name : <input type="text" class="form-control" [(ngModel)]="firstname"><br>
+    Last Name : <input type="text" class="form-control" [(ngModel)]="lastname"><br>
+    Email ID : <input type="text" class="form-control" [(ngModel)]="email"><br>
+    Password : <input type="password" class="form-control" [(ngModel)]="password"><br>
+    Gender : <input type="text" class="form-control" [(ngModel)]="gender"><br>
+    City : <input type="text" class="form-control" [(ngModel)]="city"><br>
+    Phone No : <input type="number" class="form-control" [(ngModel)]="phoneno"><br>
+    
+</div> -->
+
+<form>
+  <div class="form-group">
+    <label for="firstname">First Name :</label>
+    <input type="text" class="form-control"  placeholder="Enter First Name"  [(ngModel)]="firstname">
+  </div>
+  <div class="form-group">
+    <label for="lastname">Last Name :</label>
+    <input type="text" class="form-control" placeholder="Enter Last Name" [(ngModel)]="lastname">
+  </div>
+  <div class="form-group">
+    <label for="email">Email ID :</label>
+    <input type="text" class="form-control" placeholder="Enter  Email" [(ngModel)]="email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password :</label>
+    <input type="password" class="form-control"  placeholder="Enter  Password" [(ngModel)]="password">
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender :</label>
+    <input type="text" class="form-control"  placeholder="Enter  Name" [(ngModel)]="gender">
+  </div>
+  <div class="form-group">
+    <label for="city">City</label>
+    <input type="text" class="form-control"  placeholder="Enter  City" [(ngModel)]="city">
+  </div>
+  <div class="form-group">
+    <label for="phoneno">Phone NO:</label>
+    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Enter Phone Number" [(ngModel)]="phoneno">
+  </div>
+  
+</form>
+
+
+<div >
+    <p>{{firstname}}</p>
+    <p>{{lastname}}</p>
+	<p>{{email}}</p>
+	<p>{{password}}</p>
+	<p>{{gender}}</p>
+	<p>{{city}}</p>
+	<p>{{phoneno}}</p>
+</div>
+

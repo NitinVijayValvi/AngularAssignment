@@ -1,0 +1,111 @@
+<h1>Registration Form</h1>
+<div>
+  <form #f="ngForm" (ngSubmit)="onformSubmit()">
+    <div class="form-row">
+      <div class="col-md-3"  ngModelGroup="data" #data = "ngModelGroup">
+        <div class="form-group">
+          <label>First Name</label>
+        </div>
+        <div class="form-row">
+          <div class="col">
+          <input type="text"  id="firstname" class="form-control" name="firstname" ngModel placeholder="Enter FirstName" #firstname ="ngModel">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" ngModelGroup="data" #data = "ngModelGroup">
+        <div class="form-group">
+          <label>Last Name</label>
+        </div>
+        <div class="form-row">
+          <div class="col">
+          <input type="text"   id="lastname" class="form-control" name="lastname" ngModel placeholder="Enter LastName" #lastname ="ngModel">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"ngModelGroup="data" #data = "ngModelGroup">
+        <div class="form-group">
+          <label>Email ID</label>
+        </div>
+        <div class="form-row">
+          <div class="col">
+          <input type="text"   id="email" class="form-control" name= "email" ngModel placeholder="Enter Email" #email ="ngModel">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" ngModelGroup="data" #data = "ngModelGroup">
+        <div class="form-group">
+          <label>Password</label>
+        </div>
+        <div class="form-row">
+          <div class="col">
+          <input type="password"   id="password" class="form-control" name="password" ngModel placeholder="Enter Password" #password="ngModel" >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" ngModelGroup="data" #data = "ngModelGroup">
+        <div class="form-group">
+          <label>Gender</label>
+        </div>
+        <div class="form-row">
+          <div class="col">
+          <input type="text"  id="gender" class="form-control" name="gender" ngModel placeholder="Enter Gender" #gender = "ngModel">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3" ngModelGroup="data" #data = "ngModelGroup">
+        <div class="form-group">
+          <label>City</label>
+        </div>
+        <div class="form-row">
+          <div class="col">
+          <input type="text"  id="city" class="form-control" name="city"  ngModel placeholder="Enter City" #city="ngModel">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3" ngModelGroup="data" #data = "ngModelGroup">
+      <div class="form-group">
+        <label>Phone No</label>
+      </div>
+      <div class="form-row">
+        <div class="col">
+        <input type="number"  id="phoneno" class="form-control" name="phoneno" ngModel placeholder="Enter Phone number" #phoneno ="ngModel">
+        </div>
+      </div>
+    </div>
+    <div class="form-row mt-4">
+      <div class="col-md-5">
+        <button type="button" class="btn btn-primary" (click)="submituser()">
+          Submit
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <div class="col-md-8 mt-4 mb-4">
+    <table class="table table-bordered">
+        <thead>
+          <tr >
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>password</th>
+            <th>gender</th>
+            <th>city</th>
+            <th>phoneno</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngIf="submitted">
+            <td>{{user.firstname}}</td>
+            <td>{{user.lastname}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.city}}</td>
+            <td>{{user.phoneno}}</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>

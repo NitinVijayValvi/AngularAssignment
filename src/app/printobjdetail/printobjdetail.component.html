@@ -1,0 +1,22 @@
+<h2>Print all objects</h2>
+
+<div class="col-md-8 mt-4 mb-4">
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Item id</th>
+            <th>ItemName</th>
+            <th>Price</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let obj of itemobj_array">
+            <td>{{obj.itemid}}</td>
+            <td>{{obj.itemname}}</td>
+            <td>{{obj.price}}</td>
+          
+          </tr>
+        </tbody>
+    </table>
+  </div>
